@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="stylesheet.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <link rel="page icon" type="image/png" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--https://icon-icons.com/icon/robotic-chip-technology-robot/233250-->
+        <title>
+            My Work
+        </title>
+    </head>
+    <script>
+        function popupReminder(){
+            if (confirm("Are You Sure You Want To Open A New Tab")) {
+                window.open("help.html", "_blank");
+            }
+        }
+        let color=1
+        function colorChanger(){
+            color++;
+            if (color==2){
+                document.getElementById("button1").style.backgroundColor="rgb(193, 238, 87)";
+                document.getElementById("button2").style.color="rgb(193, 238, 87)";
+                document.getElementById("button3").style.backgroundColor="rgb(193, 238, 87)";
+                document.getElementById("button4").style.backgroundColor="rgba(100, 107, 91, 0.7)"; 
+                document.getElementById("button6").style.backgroundColor="rgb(193, 238, 87)";               
+                document.getElementById("image1").style.opacity="0";
+                document.getElementById("button3").style.backgroundColor="rgb(193, 238, 87)";
+                document.getElementById("button6").style.backgroundColor="rgb(193, 238, 87)";
+            }
+            if (color==3){
+                document.getElementById("button1").style.backgroundColor="rgb(122, 205, 255)";
+                document.getElementById("button2").style.color="rgb(122, 205, 255)";
+                document.getElementById("button3").style.backgroundColor="rgb(122, 205, 255)";
+                document.getElementById("button6").style.backgroundColor="rgb(122, 205, 255)";
+                document.getElementById("button4").style.backgroundColor="rgba(90, 105, 123, 0.7)";               
+                document.getElementById("image2").style.opacity="0";
+                document.getElementById("button6").style.backgroundColor="rgb(122, 205, 255)";
+                
+            }  
+            if (color==4){
+                document.getElementById("button1").style.backgroundColor="rgb(255, 196, 132)";
+                document.getElementById("button2").style.color="rgb(255, 196, 132)";
+                document.getElementById("button3").style.backgroundColor="rgb(255, 196, 132)";
+                document.getElementById("button4").style.backgroundColor="rgba(66,59,66,0.7)";
+                document.getElementById("button6").style.backgroundColor="rgb(255, 196, 132)";                
+                document.getElementById("image1").style.opacity="1";
+                document.getElementById("image2").style.opacity="1";
+                document.getElementById("image3").style.opacity="1";
+                document.getElementById("button6").style.backgroundColor="rgb(255, 196, 132)";
+                location.reload();
+            }
+        
+        }
+        function revertChanger(){
+            location.reload();
+        }
+    </script>
+    
+        <header style="z-index: 1;">
+            <div class="image-container1">
+                <img id="image33"src="images/image5.png" alt="low poly gradient image">
+                <!--Hero image-->
+            </div>
+            <div class="image-container1">
+                <img id="image22"src="images/image4.png" alt="low poly gradient image">
+                <!--Hero image-->
+            </div>
+            <div class="image-container1">
+                <img id="image11"src="images/image0.png" alt="low poly gradient image">
+                <!--Hero image-->
+            </div>
+        <div class="dropdown">
+            <button onclick="colorChanger()" class="dropbutton" id="button1">Change Theme</button>
+        </div>  
+        <div class="revertdown">
+            <button onclick="revertChanger()" class="revertbutton" id="button6">Revert</button>
+        </div>    
+        <div class="navbar-container" id="button4">
+            <p class="logo" id="button2">L O G O</p>
+            <a onclick="popupReminder()" class="contactbutton" id="button3" >Contact Us</a>
+            <a  style="margin-right: 20px;"href="projects.html" target="_blank">Projects</a>
+            <a href="index.html" target="_blank" style="padding-right: 20px;">Home</a>
+        </div>
+        
+    </header>
+    <body class="bodyclass">
+        <div id="head-container">
+            <h1>
+                <u>My Work</u>
+            </h1>
+        </div>
+            <p>As I have said before, I'm extremely new to the concepts of Computer Science.<br>
+            Because of that I dont have anything other than <code>print("Hello World")</code> to show.<br>
+        </p>
+        <h3>As sad as that is.</h3>
+        <p>
+            I used to dabble in a bit of digital illustration.<br>
+            <strong>So, I would hope that my drawings would suffice for now.</strong>
+        </p>
+        <div id="hr1"></div>
+        <div class="span-container1">
+            <div>
+                <img alt="Illustration of a girl holding a large spoon"
+                src="images/image1-3.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of a girl in armor"
+                src="images/image1-1.png" height="300">
+            </div>
+            <div>
+                <img alt="Incoming punch"
+                src="images/image1-4.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of a character"
+                src="images/image1-2.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of a woman with weapons"
+                src="images/image1-5.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of a character"
+                src="images/image1-6.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of two characters"
+                src="images/image1-8.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of a face"
+                src="images/image1-9.png" height="300">
+            </div>
+            <div>
+                <img alt="Illustration of a face"
+                src="images/image2.png" height="300">
+            </div>
+        </div>
+        <div id="hr1"></div>
+        <p>
+            <strong>
+                These arn't obviously all my drawings
+            </strong>
+            But I'm choosing not to include the newer ones due to their bizzare
+            nature.
+        </p>
+    </body>
+    
+</html>
